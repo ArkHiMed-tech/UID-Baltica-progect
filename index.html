@@ -10,7 +10,6 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="main.css" />
-		<link rel="icon" href="https://arkhimed-tech.github.io/UID-Baltica-progect/favicon.ico" type="image/x-icon">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="right-sidebar is-preload">
@@ -18,7 +17,7 @@
 
 			<!-- Header -->
 				<header id="header">
-					<h1 id="logo"><a href="index.html"><span>РЦ ЮИД "Балтика"</span></a></h1>
+					<h1 id="logo"><a href="index.html">Сайт <span>ЮИД Балтика</span></a></h1>
 					<nav id="nav">
 						<ul>
 							<li class="current"><a href="index.html">Dolore Sed</a></li>
@@ -80,9 +79,13 @@
 										<div class="sidebar">
 											<section>
 												<header>
-													<h3>Magna Feugiat</h3>
+													<h3>Расчет тормозного пути</h3>
 												</header>
-												<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit..</p>
+												<p>Всегда нужно знать, каков ваш тормозной путь при данной скрорсти, поэтому тут есть специальный расчетчик тормозного пути!</p>
+                                                <form>
+                                                <p>Введите скорость автомобиля: <input type="number" name="sp" value="0" min="0" max="300" class="input input-speed"> км/ч</p>
+                                                <p>Длина тормозного пути: <output class="distance-output" name="dist" value="0">0</output> метров</p>
+                                                </form>
 												<footer>
 													<ul class="buttons">
 														<li><a href="#" class="button small">Learn More</a></li>
@@ -187,6 +190,6 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+            <script src="assets/js/calculate.js" type="text/javascript"></script>
 	</body>
 </html>
