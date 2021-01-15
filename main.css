@@ -95,7 +95,12 @@ video {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-    cursor: url(assets/css/cur/cursor.cur), default;
+}
+
+body,
+html,
+padding {
+    cursor: url(assets/css/cur/cursor.cur), default !important;
 }
 
 article,
@@ -2085,6 +2090,24 @@ input[type="email"] {
     color: #fff;
 }
 
+.icon.circle.fa-envelope {
+    background-color: darkcyan;
+    color: white;
+}
+
+.icon.circle.fa-envelope:before {
+    content: "";
+}
+
+.icon.circle.fa-map-marker-alt {
+    background-color: chocolate;
+    color: white;
+}
+
+.icon.circle.fa-map-marker-alt:before {
+    content: "";
+}
+
 .icon.featured {
     cursor: default;
     display: block;
@@ -3495,4 +3518,17 @@ figure img {
 
 .instagram {
     background: url(https://img.icons8.com/fluent/344/instagram-new.png);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.red-bold {
+    color: red;
+    font-weight: 900;
+}
+
+.not-dotted {
+    border: none !important;
 }

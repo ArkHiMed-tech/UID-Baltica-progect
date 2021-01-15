@@ -22,21 +22,21 @@
 
         <!-- Header -->
         <header id="header">
-            <h1 id="logo"><a href="index.html"><span>РЦ ЮИД "Балтика"</span></a></h1>
+            <h1 id="logo"><a href="index.html">РЦ ЮИД "Балтика"</a></h1>
             <nav id="nav">
                 <ul>
-                    <li class=""><a href="index.html">О нас</a></li>
-                    <li class=""><a href="index.html">Новости</a></li>
-                    <li class=""><a href="index.html">Мероприятия</a></li>
-                    <li class=""><a href="index.html">Конкурсы</a></li>
-                    <li class=""><a href="index.html">Партнеры</a></li>
+                    <li class=""><a href="about-us.html">О нас</a></li>
+                    <li class=""><a href="news.html">Новости</a></li>
+                    <li class=""><a href="events.html">Мероприятия</a></li>
+                    <li class=""><a href="contest.html">Конкурсы</a></li>
+                    <li class=""><a href="partners.html">Партнеры</a></li>
                     <li class="submenu">
                         <a href="#">Библиотека ЮИД</a>
                         <ul>
-                            <li><a href="https://arkhimed-tech.github.io/UID-Baltica-progect/page-kroha-and-batya.html">Отец и кроха</a></li>
-                            <li><a href="right-sidebar.html">Текст</a></li>
-                            <li><a href="no-sidebar.html">Что-нибудь</a></li>
-                            <li><a href="contact.html">Что-то</a></li>
+                            <li><a href="page-kroha-and-batya.html">Отец и кроха</a></li>
+                            <li><a href="#">Текст</a></li>
+                            <li><a href="#">Что-нибудь</a></li>
+                            <li><a href="#">Что-то</a></li>
                             <li class="submenu">
                                 <a href="#">Ещё</a>
                                 <ul>
@@ -71,7 +71,7 @@
                         <!-- Content -->
                         <div class="content">
                             <section>
-                                <a href="#" class="image featured lightly"><img class="image featured" src="images/image.png" alt="" /></a>
+                                <a href="#" class="image featured lightly"><img class="image featured" src="images/pic02.jpg" alt="" /></a>
                                 <header>
                                     <h3>О нас</h3>
                                 </header>
@@ -92,9 +92,18 @@
                         <div class="sidebar">
                             <section>
                                 <header>
-                                    <h3>Magna Feugiat</h3>
+                                    <h3>Расчет тормозного пути</h3>
                                 </header>
                                 <p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit..</p>
+                                <form>
+                                    <p>Введите скорость автомобиля: <br>
+                                        <input type="number" value="0" id="calculate" max="300" min="0">
+                                    </p>
+                                    <img alt="Машина едет по дороге Анимация гиф картинка смайлик" src="http://vamotkrytka.my1.ru/_ph/66/2/35581486.gif?1610704047" height="90px">
+                                    <img alt="Знак СТОП Анимация гиф картинка смайлик" src="http://vamotkrytka.my1.ru/_ph/158/2/459563839.gif?1610704272" height="120px">
+
+                                    <p>Ваш тормозной путь составляет <br><span class="red-bold"><output id="calculate-output">0</output> метров</span></p>
+                                </form>
                                 <footer>
                                     <ul class="buttons">
                                         <li><a href="#" class="button small">Learn More</a></li>
@@ -181,6 +190,8 @@
                 <li><a href="https://www.facebook.com/yuidbaltika39/" class="icon brands circle fa-facebook-f"><span class="label">Facebook</span></a></li>
                 <li><a href="https://www.instagram.com/yuid_baltika39/ " class="icon brands circle fa-instagram"><span class="label">Instagrsm</span></a></li>
                 <li><a href="https://github.com/ArkHiMed-tech" class="icon brands circle fa-github"><span class="label">Github</span></a></li>
+                <li><a href="mailto:uid_baltika@mail.ru" class="icon brands circle fa-envelope"><span class="label">Email</span><i class="far fa-envelope"></i></a></li>
+                <li><a href="https://www.google.ru/maps/place/%D0%9C%D0%90%D0%A3%D0%94%D0%9E+%D0%A1%D0%AE%D0%A2/@54.708969,20.5273649,19z/data=!3m1!4b1!4m5!3m4!1s0x46e31799961269c7:0x1da1379d777fa29b!8m2!3d54.7089682!4d20.5279122" class="icon brands circle fa-map-marker-alt"><span class="label">Email</span><i class="fas fa-map-marker-alt"></i></a></li>
             </ul>
 
         </footer>
@@ -191,11 +202,13 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.dropotron.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollgress.min.js"></script>
     <script src="assets/js/jquery.scrollex.min.js"></script>
     <script src="assets/js/browser.min.js"></script>
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/calculate.js"></script>
 
 </body>
 
