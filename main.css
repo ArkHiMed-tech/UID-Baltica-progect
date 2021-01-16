@@ -3532,3 +3532,8 @@ figure img {
 .not-dotted {
     border: none !important;
 }
+
+.red-bold .blue-bold {
+    color: black;
+    font-weight: 300;
+}
