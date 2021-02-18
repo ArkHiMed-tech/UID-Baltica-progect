@@ -3537,3 +3537,14 @@ figure img {
     color: black;
     font-weight: 300;
 }
+
+.tables-video {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+video {
+    margin: auto;
+    border-radius: 8px;
+}
